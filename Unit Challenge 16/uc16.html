@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Current Weather</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="uc16.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Current Weather</h2>
+      <p>Try entering the name of a city like <b>Honolulu, USA</b>. </p>
+        <div id="citybox" class="control-group">
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" placeholder="City, Country" />
+        </div>
+      <div>
+        <button class='btn btn-success btn-large' onclick="findWeather('city')">Find the weather</button>
+      </div>
+      <br />
+      <div>
+        <div id="weather" class=""></div>
+      </div>
+    </div>
+  </body>
+</html>
