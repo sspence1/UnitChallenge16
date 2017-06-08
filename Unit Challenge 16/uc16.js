@@ -40,7 +40,7 @@ function displayWeather(data){
         document.getElementById("weather").innerHTML = "There is no city found with that name."
     } else {
         var fahrenheit = weather.main.temp * (9/5) - 459.67;
-        document.getElementById("weather").className = "alert alert-success";
+        document.getElementById("weather").className = "alert alert-info";
         document.getElementById("weather").innerHTML = Math.round(fahrenheit) + " degrees, " + weather.weather[0].description;
     }
 }
